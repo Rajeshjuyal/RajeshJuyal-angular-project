@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RajeshJuyal ';
-  getName(name: any) {
-    alert(name);
+  name = 'hello';
+  disabledBox = true;
+  enableBox() {
+    this.disabledBox = false;
   }
 }

@@ -1,4 +1,7 @@
-<h1>Angular Module tutorial</h1>
-<app-login></app-login>
-<app-signup></app-signup>
-<button (click)="getName('tony')">Get my name</button>
+<h1>Property binding In Angular</h1>
+<input type="text" [disabled]="disabledBox" [value]="name" />
+<br >
+<br >
+<input type="text" disabled={{ disabledBox }} value={{ name }} />
+<br> <br>
+<button (click)="enableBox()">Enable TextBox</button>
